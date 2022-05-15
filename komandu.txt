@@ -1,0 +1,8 @@
+git init (sozdanie)
+git status(ochevidno)
+git add (sohranenie)
+git config (proverka nastr)
+git add. (все добавляет)
+git rm --cached <file>... (убмрает сохраненое)
+git commit -a -m (сохранил и описал) (новые файлы не сохраняет)
+хуй
