@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Регистрация</title>
+</head>
+
+<body>
+  <h1 id="top">Регистрация</h1>
+  <div>
+    <ul>
+      <li><a href="articles.html">articles</a></li>
+      <li><a href="catalog.html">catalog</a></li>
+      <li><a href="contacts.html">contacts</a></li>
+      <li><a href="gallery.html">gallery</a></li>
+      <li><a href="page-nav.html">page-nav</a></li>
+      <li><a href="../index.html">index</a></li>
+    </ul>
+
+    <form action="url" method="get">
+      <fieldset>
+        <legend>Основная информация</legend>
+        <div>
+          <label for="login">Логин*</label>
+          <input id="login" type="text" name="lgn" required>
+        </div>
+
+        <div>
+          <label for="password">Пароль*</label>
+          <input id="password" type="password" name="psw" required minlength="3" maxlength="12">
+        </div>
+
+        <div>
+          <label for="email">Имейл*</label>
+          <input id="email" type="email" name="email" required>
+        </div>
+
+        <div>
+          <label for="age">Возраст</label>
+          <input id="age" type="number" name="age" min="1" max="122" value="25">
+        </div>
+
+        <div>
+          <label for="file">Загрузка какогото файла</label>
+          <input id="file" type="file" name="file">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Предпочтения по кухне</legend>
+        <div>
+          <input id="ua" name="kit" type="checkbox" value="ua" checked>
+          <label for="ua">Украинская</label>
+        </div>
+        <div>
+          <input id="jp" name="kit" type="checkbox" value="jp">
+          <label for="jp">Японская</label>
+        </div>
+        <div>
+          <input id="gr" name="kit" type="checkbox" value="gr">
+          <label for="gr">Грузинская</label>
+        </div>
+        <div>
+          <input id="gr" name="kit" type="checkbox" disabled>
+          <label for="gr">Вегетарианская</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Укажите ваш пол</legend>
+        <div>
+          <input id="male" name="gender" type="radio" value="male">
+          <label for="male">Мужской</label>
+        </div>
+        <div>
+          <input id="female" name="gender" type="radio" value="female">
+          <label for="female">Женский</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Открывающийся список</legend>
+        <div>
+          <label for="">Год выпуска вашего авто</label>
+          <select name="list" id="list" required>
+            <option selected disabled value="">Сделайте выбор...</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Подробно</legend>
+        <div>
+          <label for="txt">Дополнительная информация</label>
+          <textarea name="txt" id="txt" cols="20" rows="5"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Управление формой</legend>
+        <div>
+          <input type="reset" value="Сбросить форму">
+        </div>
+
+        <div>
+          <input type="submit" value="Отправить форму">
+        </div>
+      </fieldset>
+    </form>
+    <p><a href="#top">Вернуться</a></p>
+  </div>
+</body>
+<footer>
+  <p>&#169; korivka</p>
+</footer>
+
+</html>
